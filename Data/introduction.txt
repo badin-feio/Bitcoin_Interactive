@@ -1,0 +1,2 @@
+
+You will see the pkl file in this data folder. This pkl file is only used for this interaction app specially for the project 1.

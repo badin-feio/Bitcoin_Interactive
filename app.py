@@ -2,17 +2,19 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import pickle
 
 st.set_page_config(page_title="Bitcoin Portfolio Explorer", layout="wide")
 
-st.title("📊 Bitcoin Portfolio Margin Call and Liquidation Explorer")
+st.title("📊 Bitcoin Portfolio Liquidation Explorer")
 
-def load_data():
-    df = pd.read_csv("data/movies_genres_summary.csv")
-    return df
+@st.cache_data
+def fetch_data():
+    data = pickle.load(Data/project1.pkl)
+    return data
 
 
-df = load_data()
+df = fetch_data()
 
 
 

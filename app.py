@@ -14,7 +14,7 @@ def fetch_data():
     return data
 
 
-df = fetch_data()
+df_raw = fetch_data()
 
 
 
